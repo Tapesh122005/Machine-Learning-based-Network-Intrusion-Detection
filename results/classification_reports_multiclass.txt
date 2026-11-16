@@ -1,0 +1,100 @@
+Dataset: NSL-KDD (KDDTrain+ / KDDTest+)
+Task: multiclass (5 classes)
+
+===== Random Forest =====
+              precision    recall  f1-score   support
+
+         DoS     0.9628    0.7973    0.8722      7458
+      Normal     0.6532    0.9738    0.7819      9711
+       Probe     0.8241    0.6039    0.6970      2421
+         R2L     0.9732    0.0378    0.0727      2887
+         U2R     0.3333    0.0149    0.0286        67
+
+    accuracy                         0.7530     22544
+   macro avg     0.7493    0.4855    0.4905     22544
+weighted avg     0.8140    0.7530    0.7096     22544
+
+
+===== SVM (RBF) (trained on 25,000-row stratified-random subsample) =====
+              precision    recall  f1-score   support
+
+         DoS     0.9614    0.7774    0.8597      7458
+      Normal     0.6503    0.9709    0.7789      9711
+       Probe     0.8245    0.6328    0.7161      2421
+         R2L     0.9733    0.0506    0.0961      2887
+         U2R     0.3750    0.0448    0.0800        67
+
+    accuracy                         0.7500     22544
+   macro avg     0.7569    0.4953    0.5062     22544
+weighted avg     0.8125    0.7500    0.7094     22544
+
+
+===== Decision Tree =====
+              precision    recall  f1-score   support
+
+         DoS     0.9608    0.8221    0.8860      7458
+      Normal     0.6671    0.9630    0.7882      9711
+       Probe     0.7975    0.6394    0.7098      2421
+         R2L     0.9572    0.0620    0.1165      2887
+         U2R     0.9375    0.2239    0.3614        67
+
+    accuracy                         0.7641     22544
+   macro avg     0.8640    0.5421    0.5724     22544
+weighted avg     0.8162    0.7641    0.7249     22544
+
+
+===== KNN (k=5) =====
+              precision    recall  f1-score   support
+
+         DoS     0.9630    0.8171    0.8841      7458
+      Normal     0.6676    0.9723    0.7916      9711
+       Probe     0.8350    0.6815    0.7505      2421
+         R2L     0.8961    0.0239    0.0466      2887
+         U2R     0.6842    0.1940    0.3023        67
+
+    accuracy                         0.7660     22544
+   macro avg     0.8092    0.5378    0.5550     22544
+weighted avg     0.8126    0.7660    0.7209     22544
+
+
+===== Logistic Regression =====
+              precision    recall  f1-score   support
+
+         DoS     0.9201    0.8294    0.8724      7458
+      Normal     0.6646    0.9303    0.7753      9711
+       Probe     0.8782    0.7770    0.8245      2421
+         R2L     0.6154    0.0139    0.0271      2887
+         U2R     0.7619    0.2388    0.3636        67
+
+    accuracy                         0.7610     22544
+   macro avg     0.7680    0.5579    0.5726     22544
+weighted avg     0.7661    0.7610    0.7157     22544
+
+
+===== Naive Bayes =====
+              precision    recall  f1-score   support
+
+         DoS     0.8896    0.4756    0.6198      7458
+      Normal     0.5178    0.6074    0.5590      9711
+       Probe     0.9225    0.0983    0.1777      2421
+         R2L     0.1595    0.3242    0.2138      2887
+         U2R     0.0423    0.6567    0.0794        67
+
+    accuracy                         0.4730     22544
+   macro avg     0.5063    0.4324    0.3300     22544
+weighted avg     0.6370    0.4730    0.4925     22544
+
+
+===== Gradient Boosting =====
+              precision    recall  f1-score   support
+
+         DoS     0.9633    0.8347    0.8944      7458
+      Normal     0.7199    0.9689    0.8261      9711
+       Probe     0.7840    0.6658    0.7201      2421
+         R2L     0.9158    0.2750    0.4230      2887
+         U2R     0.1444    0.1940    0.1656        67
+
+    accuracy                         0.8008     22544
+   macro avg     0.7055    0.5877    0.6058     22544
+weighted avg     0.8307    0.8008    0.7837     22544
+
